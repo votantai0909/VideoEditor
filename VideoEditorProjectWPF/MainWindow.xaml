@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <MediaElement Name="VideoPlayer" LoadedBehavior="Manual" Stretch="Uniform" />
 
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Background="Gray" Height="50">
+            <Button Content="Mở Video" Width="70" Height="25" Margin="10,0,20,0"/>
+            <Button Content="Play" Width="70" Height="25" Margin="0,0,20,0"/>
+            <Button Content="Pause" Width="70" Height="25" Margin="0,0,20,0"/>
+            <Button Content="Stop" Width="70" Height="25" Margin="0,0,20,0"/>
+            <Button Content="Skip >>" Width="70" Height="25" Margin="0,0,20,0"/>
+
+            <ComboBox Name="SpeedSelector" SelectionChanged="SpeedSelector_SelectionChanged" Margin="0,0,20,0" Height="25">
+                <ComboBoxItem Content="0.5x" Tag="0.5"/>
+                <ComboBoxItem Content="1x" Tag="1.0" IsSelected="True"/>
+                <ComboBoxItem Content="1.5x" Tag="1.5"/>
+                <ComboBoxItem Content="2x" Tag="2.0"/>
+            </ComboBox>
+
+            <Button Content="Chèn Nhạc" Width="80" Height="25"/>
+        </StackPanel>
     </Grid>
 </Window>
