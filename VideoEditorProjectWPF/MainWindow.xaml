@@ -5,8 +5,10 @@
 
     <Grid>
         <!-- Video Player -->
-        <MediaElement Name="VideoPlayer" LoadedBehavior="Manual" Stretch="Uniform" Height="320" Margin="0,30,0,80"/>
-
+        <MediaElement Name="VideoPlayer" LoadedBehavior="Manual" Stretch="Uniform" Margin="0,32,0,94"/>
+        <!-- Video Progress Bar -->
+        <Slider Name="VideoSlider" Minimum="0" Maximum="100" ValueChanged="VideoSlider_ValueChanged"
+                VerticalAlignment="Bottom" Height="20" Margin="10,0,10,60"/>
         <!-- Controls -->
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Background="Gray" Height="50">
             <Button Content="Mở Video" Width="80" Height="30" Margin="10,0,10,0" Click="OpenVideo_Click"/>
