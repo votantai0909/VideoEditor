@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FoykvLR6VP9FQ2PaPDGTcSQnVFoVBgf7sn0RRI1gEfRHpKzNbV7fPJNvrWzKNnBi20N8XQZE/svVRWlh+BSpbg==",
+  "dgSpecHash": "Mo5B7sSWNC8QteqvwrA/apqPvrJnAmuLnK1DSPBPGo6DUlfjX6t4GoECmGoGgwJz20QmB9OdqFkgXg/xIrDhpg==",
   "success": true,
-  "projectFilePath": "D:\\dowload\\SE_KI_7\\PRN212\\AssGroup\\VideoEditorProject\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
+  "projectFilePath": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vo tan tai\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\vo tan tai\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
