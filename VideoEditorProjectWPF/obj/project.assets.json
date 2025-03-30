@@ -46,6 +46,38 @@
           }
         }
       },
+      "LibVLCSharp/3.9.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/LibVLCSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/LibVLCSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LibVLCSharp.WPF/3.9.2": {
+        "type": "package",
+        "dependencies": {
+          "LibVLCSharp": "3.9.2"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/LibVLCSharp.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/LibVLCSharp.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1155,6 +1187,77 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "LibVLCSharp/3.9.2": {
+      "sha512": "PbDIVdrIIf9nMizePhv1BMoMSiIn04beCHD2MAhk2DcueckTQOLoHycXIW3lTXB+MSZ0PWWC8eGwFzz4NmxVKQ==",
+      "type": "package",
+      "path": "libvlcsharp/3.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/monoandroid81/LibVLCSharp.Android.AWindow.dll",
+        "lib/monoandroid81/LibVLCSharp.dll",
+        "lib/monoandroid81/LibVLCSharp.xml",
+        "lib/net40/LibVLCSharp.dll",
+        "lib/net40/LibVLCSharp.xml",
+        "lib/net471/LibVLCSharp.dll",
+        "lib/net471/LibVLCSharp.xml",
+        "lib/net6.0-windows10.0.17763/LibVLCSharp.dll",
+        "lib/net6.0-windows10.0.17763/LibVLCSharp.pri",
+        "lib/net6.0-windows10.0.17763/LibVLCSharp.xml",
+        "lib/net6.0/LibVLCSharp.dll",
+        "lib/net6.0/LibVLCSharp.xml",
+        "lib/net8.0-android34.0/LibVLCSharp.dll",
+        "lib/net8.0-android34.0/LibVLCSharp.xml",
+        "lib/net8.0-ios18.0/LibVLCSharp.dll",
+        "lib/net8.0-ios18.0/LibVLCSharp.xml",
+        "lib/net8.0-macos15.0/LibVLCSharp.dll",
+        "lib/net8.0-macos15.0/LibVLCSharp.xml",
+        "lib/net8.0-tvos18.0/LibVLCSharp.dll",
+        "lib/net8.0-tvos18.0/LibVLCSharp.xml",
+        "lib/net8.0-windows10.0.19041/LibVLCSharp.dll",
+        "lib/net8.0-windows10.0.19041/LibVLCSharp.pri",
+        "lib/net8.0-windows10.0.19041/LibVLCSharp.xml",
+        "lib/net8.0/LibVLCSharp.dll",
+        "lib/net8.0/LibVLCSharp.xml",
+        "lib/netstandard1.1/LibVLCSharp.dll",
+        "lib/netstandard1.1/LibVLCSharp.xml",
+        "lib/netstandard2.0/LibVLCSharp.dll",
+        "lib/netstandard2.0/LibVLCSharp.xml",
+        "lib/netstandard2.1/LibVLCSharp.dll",
+        "lib/netstandard2.1/LibVLCSharp.xml",
+        "lib/uap10.0.18362/LibVLCSharp.dll",
+        "lib/uap10.0.18362/LibVLCSharp.pri",
+        "lib/uap10.0.18362/LibVLCSharp.xml",
+        "lib/uap10.0.18362/LibVLCSharp/LibVLCSharp.xr.xml",
+        "lib/xamarinios10/LibVLCSharp.dll",
+        "lib/xamarinios10/LibVLCSharp.xml",
+        "lib/xamarinmac20/LibVLCSharp.dll",
+        "lib/xamarinmac20/LibVLCSharp.xml",
+        "libvlcsharp.3.9.2.nupkg.sha512",
+        "libvlcsharp.nuspec"
+      ]
+    },
+    "LibVLCSharp.WPF/3.9.2": {
+      "sha512": "hl1+7pS3vjDIMHgfFbOtNTDaeTr4QSjN2cGWmFcMjJZmRaakWaeQ6LUgxSpBNPzRR7TAtqnDymjzVJUM5Fu0YQ==",
+      "type": "package",
+      "path": "libvlcsharp.wpf/3.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net461/LibVLCSharp.WPF.dll",
+        "lib/net461/LibVLCSharp.WPF.xml",
+        "lib/net6.0-windows7.0/LibVLCSharp.WPF.dll",
+        "lib/net6.0-windows7.0/LibVLCSharp.WPF.xml",
+        "lib/netcoreapp3.1/LibVLCSharp.WPF.dll",
+        "lib/netcoreapp3.1/LibVLCSharp.WPF.xml",
+        "libvlcsharp.wpf.3.9.2.nupkg.sha512",
+        "libvlcsharp.wpf.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -3059,6 +3162,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "LibVLCSharp.WPF >= 3.9.2",
       "VideoEditorProject.Services >= 1.0.0"
     ]
   },
@@ -3116,6 +3220,12 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "LibVLCSharp.WPF": {
+            "target": "Package",
+            "version": "[3.9.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

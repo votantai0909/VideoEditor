@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LibVLCSharp.WPF" Version="3.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\VideoEditorProject.Service\VideoEditorProject.Services.csproj">
       <Private>True</Private>
     </ProjectReference>

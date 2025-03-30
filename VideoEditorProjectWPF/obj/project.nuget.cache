@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yZtYuXMUdKQ=",
+  "dgSpecHash": "+pKZZNqm9Uc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Desktop\\Assigment\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\libvlcsharp\\3.9.2\\libvlcsharp.3.9.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\libvlcsharp.wpf\\3.9.2\\libvlcsharp.wpf.3.9.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
