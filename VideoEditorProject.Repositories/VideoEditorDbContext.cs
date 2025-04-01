@@ -29,31 +29,20 @@ public partial class VideoEditorDbContext : DbContext
 
     public virtual DbSet<VideoEffect> VideoEffects { get; set; }
 
-    private string GetConnectionString()
-    {
-        IConfiguration config = new ConfigurationBuilder()
-             .SetBasePath(Directory.GetCurrentDirectory())
-                    .AddJsonFile("appsettings.json", true, true)
-                    .Build();
-        var strConn = config["ConnectionStrings:DefaultConnectionStringDB"];
-
-        return strConn;
-    }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(GetConnectionString());
+    private string GetConnectionString() { IConfiguration config = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", true, true).Build(); var strConn = config["ConnectionStrings:DefaultConnectionStringDB"]; return strConn; }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer(GetConnectionString());
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Account>(entity =>
         {
-            entity.HasKey(e => e.AccountId).HasName("PK__Account__349DA5A6C8AED212");
+            entity.HasKey(e => e.AccountId).HasName("PK__Account__349DA5A674FD2926");
 
             entity.ToTable("Account");
 
-            entity.HasIndex(e => e.Username, "UQ__Account__536C85E4CF3DF774").IsUnique();
+            entity.HasIndex(e => e.Username, "UQ__Account__536C85E4E7009660").IsUnique();
 
-            entity.HasIndex(e => e.Email, "UQ__Account__A9D105343BCCBD11").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Account__A9D10534865E0E7D").IsUnique();
 
             entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.Password).HasMaxLength(255);
@@ -62,21 +51,22 @@ public partial class VideoEditorDbContext : DbContext
 
         modelBuilder.Entity<BackgroundMusic>(entity =>
         {
-            entity.HasKey(e => e.MusicId).HasName("PK__Backgrou__11F840007B1C0DCD");
+            entity.HasKey(e => e.MusicId).HasName("PK__Backgrou__11F840003D0A6140");
 
             entity.ToTable("BackgroundMusic");
 
             entity.Property(e => e.FilePath).HasMaxLength(255);
+            entity.Property(e => e.Name).HasMaxLength(100);
 
             entity.HasOne(d => d.Video).WithMany(p => p.BackgroundMusics)
                 .HasForeignKey(d => d.VideoId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK__Backgroun__Video__32E0915F");
+                .HasConstraintName("FK__Backgroun__Video__33D4B598");
         });
 
         modelBuilder.Entity<EditedVideo>(entity =>
         {
-            entity.HasKey(e => e.EditedVideoId).HasName("PK__EditedVi__533BDD26E13B6357");
+            entity.HasKey(e => e.EditedVideoId).HasName("PK__EditedVi__533BDD26E55F46B1");
 
             entity.ToTable("EditedVideo");
 
@@ -93,7 +83,7 @@ public partial class VideoEditorDbContext : DbContext
 
         modelBuilder.Entity<OverlayContent>(entity =>
         {
-            entity.HasKey(e => e.OverlayId).HasName("PK__OverlayC__8BDC3702345EC9A7");
+            entity.HasKey(e => e.OverlayId).HasName("PK__OverlayC__8BDC3702B48F7A97");
 
             entity.ToTable("OverlayContent");
 
@@ -105,12 +95,12 @@ public partial class VideoEditorDbContext : DbContext
             entity.HasOne(d => d.Video).WithMany(p => p.OverlayContents)
                 .HasForeignKey(d => d.VideoId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK__OverlayCo__Video__35BCFE0A");
+                .HasConstraintName("FK__OverlayCo__Video__36B12243");
         });
 
         modelBuilder.Entity<Video>(entity =>
         {
-            entity.HasKey(e => e.VideoId).HasName("PK__Video__BAE5126A742EBB9D");
+            entity.HasKey(e => e.VideoId).HasName("PK__Video__BAE5126ACF44A312");
 
             entity.ToTable("Video");
 
@@ -127,7 +117,7 @@ public partial class VideoEditorDbContext : DbContext
 
         modelBuilder.Entity<VideoEffect>(entity =>
         {
-            entity.HasKey(e => e.EffectId).HasName("PK__VideoEff__6B859F23C266E1F5");
+            entity.HasKey(e => e.EffectId).HasName("PK__VideoEff__6B859F235F3EF195");
 
             entity.ToTable("VideoEffect");
 

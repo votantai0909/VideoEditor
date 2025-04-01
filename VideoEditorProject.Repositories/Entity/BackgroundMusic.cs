@@ -9,11 +9,11 @@ public partial class BackgroundMusic
 
     public int? VideoId { get; set; }
 
+    public string Name { get; set; } = null!;
+
     public string FilePath { get; set; } = null!;
 
-    public double StartTime { get; set; }
-
-    public double EndTime { get; set; }
+    public double Duration { get; set; }
 
     public virtual Video? Video { get; set; }
 }
