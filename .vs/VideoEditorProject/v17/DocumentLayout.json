@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorprojectwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorproject.repositories\\entity\\backgroundmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|solutionrelative:videoeditorproject.repositories\\entity\\backgroundmusic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorprojectwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorproject.service\\services\\backgroundmusicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|solutionrelative:videoeditorproject.service\\services\\backgroundmusicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorproject.service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|solutionrelative:videoeditorproject.service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorproject.repositories\\repositories\\backgroundmusicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|solutionrelative:videoeditorproject.repositories\\repositories\\backgroundmusicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorproject.repositories\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +39,8 @@
       "RelativeMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|solutionrelative:videoeditorproject.repositories\\videoeditordbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorproject.service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|solutionrelative:videoeditorproject.service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorproject.repositories\\videoeditorproject.repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|solutionrelative:videoeditorproject.repositories\\videoeditorproject.repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorprojectwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\git_group\\videoeditorprojectwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -58,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,20 +94,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VideoEditorDbContext.cs",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
-              "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
-              "RelativeToolTip": "VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAYwB8AAAA2AAAA",
+              "DocumentIndex": 1,
+              "Title": "BackgroundMusic.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Entity\\BackgroundMusic.cs",
+              "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Entity\\BackgroundMusic.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Entity\\BackgroundMusic.cs",
+              "RelativeToolTip": "VideoEditorProject.Repositories\\Entity\\BackgroundMusic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T07:18:49.839Z",
+              "WhenOpened": "2025-04-01T07:21:52.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BackgroundMusicService.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\Services\\BackgroundMusicService.cs",
+              "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\BackgroundMusicService.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\Services\\BackgroundMusicService.cs",
+              "RelativeToolTip": "VideoEditorProject.Service\\Services\\BackgroundMusicService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:21:31.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "BackgroundMusicRepository.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Repositories\\BackgroundMusicRepository.cs",
+              "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Repositories\\BackgroundMusicRepository.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Repositories\\BackgroundMusicRepository.cs",
+              "RelativeToolTip": "VideoEditorProject.Repositories\\Repositories\\BackgroundMusicRepository.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:21:24.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\appsettings.json",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\appsettings.json",
@@ -108,20 +146,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\LoginWindow.xaml.cs",
               "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\LoginWindow.xaml.cs",
               "RelativeToolTip": "VideoEditorProjectWPF\\LoginWindow.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAzwCsAAAAYAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAQwCsAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T08:17:47.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\App.xaml",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\App.xaml",
@@ -132,33 +170,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
               "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAowDYAAAAJAAAA",
+              "ViewState": "AQIAALwAAAAAAAAAAAAmwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T06:50:19.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountRepository.cs",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
-              "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
-              "RelativeToolTip": "VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T08:15:54.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AccountService.cs",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\AccountService.cs",
@@ -171,7 +196,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "VideoEditorDbContext.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
+              "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
+              "RelativeToolTip": "VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwB8AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T07:18:49.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T08:15:54.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "VideoEditorProject.Repositories.csproj",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
               "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
@@ -179,12 +229,11 @@
               "RelativeToolTip": "VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
               "ViewState": "AQIAAAoAAAAAAAAAAAAowBUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-27T14:29:08.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T14:29:08.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\MainWindow.xaml",
@@ -195,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\LoginWindow.xaml",
@@ -206,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "VideoEditorProjectWPF.csproj",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
@@ -218,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "VideoEditorProject.Services.csproj",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\VideoEditorProject.Services.csproj",

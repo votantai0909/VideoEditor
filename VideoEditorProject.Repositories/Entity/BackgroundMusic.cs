@@ -17,3 +17,4 @@ public partial class BackgroundMusic
 
     public virtual Video? Video { get; set; }
 }
+
