@@ -25,6 +25,7 @@
             </ComboBox>
 
             <Button Content="🎵 Chèn Nhạc" Width="100" Height="30"/>
+            <Button Content="chỉnh sửa hiệu ứng" Click="OpenEffectWindow_Click" Height="30" Width="128" RenderTransformOrigin="1.529,0.555"/>
         </StackPanel>
     </Grid>
 </Window>

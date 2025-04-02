@@ -4321,23 +4321,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Desktop\\Assigment\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
+      "projectUniqueName": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
       "projectName": "VideoEditorProject.Repositories",
-      "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\Assigment\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\Assigment\\VideoEditor\\VideoEditorProject.Repositories\\obj\\",
+      "projectPath": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

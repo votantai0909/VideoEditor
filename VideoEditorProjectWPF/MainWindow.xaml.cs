@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,6 +11,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using VideoEditorProject.Services.Interface;
+using VideoEditorProject.Services.Services;
 
 namespace VideoEditorProjectWPF
 {
@@ -18,6 +21,7 @@ namespace VideoEditorProjectWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         private DispatcherTimer timer;
         public MainWindow()
         {
@@ -96,5 +100,48 @@ namespace VideoEditorProjectWPF
                 VideoPlayer.SpeedRatio = double.Parse(selectedItem.Tag.ToString());
             }
         }
+
+        private void OpenEffectWindow_Click(object sender, RoutedEventArgs e)
+        {
+            if (VideoPlayer.Source != null)
+            {
+                MessageBox.Show($"Video Path: {VideoPlayer.Source?.LocalPath}");
+
+                string videoPath = VideoPlayer.Source.LocalPath;
+
+                if (File.Exists(videoPath)) // 🔹 Kiểm tra file trước khi mở hiệu ứng
+                {
+                    // Khởi tạo VideoService trực tiếp trong đây
+                    VideoService videoService = new VideoService();  // Không cần truyền VideoService từ bên ngoài
+
+                    // Truyền videoService trực tiếp vào cửa sổ hiệu ứng
+                    VideoEffectWindow effectWindow = new VideoEffectWindow(videoPath);  // Truyền videoPath, không cần truyền videoService
+
+                    if (effectWindow.ShowDialog() == true)
+                    {
+                        string editedVideoPath = effectWindow.Tag as string;
+                        if (!string.IsNullOrEmpty(editedVideoPath) && File.Exists(editedVideoPath))
+                        {
+                            VideoPlayer.Source = new Uri(editedVideoPath);
+                            VideoPlayer.Play();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy video đã chỉnh sửa!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("File gốc không tồn tại!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn video trước!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+
     }
 }

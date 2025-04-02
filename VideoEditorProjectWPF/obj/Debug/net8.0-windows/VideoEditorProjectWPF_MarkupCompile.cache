@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProjectWPF\obj\Debug\net8.0-windows\
+D:\PRN Group Pro\VideoEditor\VideoEditorProjectWPF\obj\Debug\net8.0-windows\
 VideoEditorProjectWPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProjectWPF\App.xaml
-2-216653475
+D:\PRN Group Pro\VideoEditor\VideoEditorProjectWPF\App.xaml
+31159347171
 
-5-1619382524
-2341058188523
-LoginWindow.xaml;MainWindow.xaml;
+6-1582511756
+234-1761140224
+LoginWindow.xaml;MainWindow.xaml;VideoEffectWindow.xaml;
 
 False
 
