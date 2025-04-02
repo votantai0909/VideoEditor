@@ -26,7 +26,7 @@
             <Button Content="▶️ Play" Width="70" Height="30" Click="Play_Click" Margin="0,0,10,0"/>
             <Button Content="⏸ Pause" Width="70" Height="30" Click="Pause_Click" Margin="0,0,10,0"/>
             <Button Content="⏹ Stop" Width="70" Height="30" Click="Stop_Click" Margin="0,0,10,0"/>
-            <Button Content="Skip >>" Width="80" Height="30" Click="Skip_Click"/>
+            <Button Content="Skip >>" Width="70" Height="30" Click="Skip_Click"/>
 
             <ComboBox Name="SpeedSelector" SelectionChanged="SpeedSelector_SelectionChanged" Width="80" Height="30" Margin="10,0,10,0">
                 <ComboBoxItem Content="0.5x" Tag="0.5"/>
@@ -36,13 +36,14 @@
             </ComboBox>
 
             <!-- Danh sách nhạc nền -->
-            <ComboBox Name="MusicComboBox" Width="120" Height="30" SelectionChanged="MusicComboBox_SelectionChanged">
+            <ComboBox Name="MusicComboBox" Width="110" Height="30" SelectionChanged="MusicComboBox_SelectionChanged">
                 <ComboBoxItem Content="Chọn nhạc nền" IsSelected="True"/>
             </ComboBox>
 
             <!-- Nhạc Volume Slider -->
             <Label Content="volume" Height="30" Margin="10,0,0,0" Foreground="#FFEFE1E1"/>
             <Slider Name="MusicVolumeSlider" Minimum="0" Maximum="1" Value="0.5" Width="100" Height="27" Margin="0,8,10,0" ValueChanged="MusicVolumeSlider_ValueChanged" RenderTransformOrigin="0.53,1.367" />
+            <Button Content="🎵 Thêm Nhạc" Width="100" Height="30" Click="AddMusic_Click" Margin="5,0,10,0"/>
         </StackPanel>
 
     </Grid>
