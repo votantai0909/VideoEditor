@@ -3050,11 +3050,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
+      "projectUniqueName": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
       "projectName": "VideoEditorProject.Services",
-      "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
+      "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
       "packagesPath": "C:\\Users\\vo tan tai\\.nuget\\packages\\",
-      "outputPath": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Service\\obj\\",
+      "outputPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vo tan tai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3072,8 +3072,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj": {
-              "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj"
+            "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj": {
+              "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj"
             }
           }
         }

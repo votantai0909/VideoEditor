@@ -4326,11 +4326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
+      "projectUniqueName": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
       "projectName": "VideoEditorProject.Repositories",
-      "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
+      "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
       "packagesPath": "C:\\Users\\vo tan tai\\.nuget\\packages\\",
-      "outputPath": "D:\\dowload\\SE_KI_7\\PRN212\\Git_Group\\VideoEditorProject.Repositories\\obj\\",
+      "outputPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vo tan tai\\AppData\\Roaming\\NuGet\\NuGet.Config",
