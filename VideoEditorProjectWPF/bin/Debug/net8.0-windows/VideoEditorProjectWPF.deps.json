@@ -577,7 +577,10 @@
           "Microsoft.Extensions.Configuration.Json": "8.0.0"
         },
         "runtime": {
-          "VideoEditorProject.Repositories.dll": {}
+          "VideoEditorProject.Repositories.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "VideoEditorProject.Services/1.0.0": {
@@ -585,7 +588,10 @@
           "VideoEditorProject.Repositories": "1.0.0"
         },
         "runtime": {
-          "VideoEditorProject.Services.dll": {}
+          "VideoEditorProject.Services.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

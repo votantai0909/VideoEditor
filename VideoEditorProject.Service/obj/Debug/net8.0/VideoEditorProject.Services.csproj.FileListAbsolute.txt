@@ -1,63 +1,16 @@
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.deps.json
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.pdb
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.dll
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.pdb
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.AssemblyReference.cache
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.GeneratedMSBuildEditorConfig.editorconfig
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfoInputs.cache
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfo.cs
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.CoreCompileInputs.cache
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEdi.533FD392.Up2Date
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\refint\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.pdb
-D:\dowload\SE_KI_7\PRN212\AssGroup\VideoEditorProject\VideoEditorProject.Service\obj\Debug\net8.0\ref\VideoEditorProject.Services.dll
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.deps.json
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.dll
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.pdb
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.dll
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.pdb
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.AssemblyReference.cache
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfoInputs.cache
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfo.cs
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.CoreCompileInputs.cache
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.sourcelink.json
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEdi.533FD392.Up2Date
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.dll
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\refint\VideoEditorProject.Services.dll
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.pdb
-C:\Users\Admin\OneDrive\Desktop\Assigment\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\ref\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.deps.json
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.pdb
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.dll
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.pdb
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.AssemblyReference.cache
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.GeneratedMSBuildEditorConfig.editorconfig
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfoInputs.cache
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfo.cs
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.CoreCompileInputs.cache
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.sourcelink.json
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEdi.533FD392.Up2Date
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\refint\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.pdb
-D:\dowload\SE_KI_7\PRN212\Git_Group\VideoEditorProject.Service\obj\Debug\net8.0\ref\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.deps.json
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.pdb
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.dll
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.pdb
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.AssemblyReference.cache
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.GeneratedMSBuildEditorConfig.editorconfig
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfoInputs.cache
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfo.cs
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.CoreCompileInputs.cache
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.sourcelink.json
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEdi.533FD392.Up2Date
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\refint\VideoEditorProject.Services.dll
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.pdb
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProject.Service\obj\Debug\net8.0\ref\VideoEditorProject.Services.dll
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.deps.json
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.dll
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Services.pdb
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.dll
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\bin\Debug\net8.0\VideoEditorProject.Repositories.pdb
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.AssemblyReference.cache
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfoInputs.cache
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.AssemblyInfo.cs
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.csproj.CoreCompileInputs.cache
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.sourcelink.json
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEdi.533FD392.Up2Date
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.dll
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\refint\VideoEditorProject.Services.dll
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\VideoEditorProject.Services.pdb
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProject.Service\obj\Debug\net8.0\ref\VideoEditorProject.Services.dll

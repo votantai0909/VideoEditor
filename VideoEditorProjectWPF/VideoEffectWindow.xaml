@@ -6,14 +6,56 @@
         xmlns:local="clr-namespace:VideoEditorProjectWPF"
         mc:Ignorable="d"
         Title="VideoEffectWindow" Height="450" Width="800">
-    <Grid>
-        <MediaElement Name="mediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Manual" HorizontalAlignment="Left" Height="296" Margin="71,40,0,0" VerticalAlignment="Top" Width="672"/>
-        <Button Name="btnCut" Content="Cắt Video" Click="BtnCut_Click" HorizontalAlignment="Left" Margin="71,381,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnGray" Content="Trắng Đen" Click="BtnGray_Click" HorizontalAlignment="Left" Margin="150,381,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnReverse" Content="Tua Ngược" Click="BtnReverse_Click" HorizontalAlignment="Left" Margin="250,381,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnSlowMotion" Content="Slow Motion" Click="BtnSlowMotion_Click" HorizontalAlignment="Center" Margin="0,381,0,0" VerticalAlignment="Top"/>
-        <Button Content="Return" Click="BtnReturn_Click" HorizontalAlignment="Left" Margin="481,381,0,0" VerticalAlignment="Top" Width="71"/>
-        <Slider Name="VideoSlider" Minimum="0" Maximum="100" ValueChanged="VideoSlider_ValueChanged" HorizontalAlignment="Left" Margin="71,358,0,0" VerticalAlignment="Top" Width="300"/>
+    <Grid Margin="10">
+        <!-- Video Player -->
+        <MediaElement Name="mediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Manual"
+                  HorizontalAlignment="Left" Height="296" Margin="50,40,0,0"
+                  VerticalAlignment="Top" Width="700"/>
 
+        <!-- Buttons -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                Orientation="Horizontal" Margin="0,20">
+            <Button Name="btnPlay" Content="Play" Click="BtnPlay_Click"
+                HorizontalAlignment="Center" Width="120" Margin="10"/>
+            <Button Name="btnPause" Content="Pause" Click="BtnPause_Click"
+                HorizontalAlignment="Center" Width="120" Margin="10"/>
+            <Button Name="btnCut" Content="Cắt Video" Click="BtnCut_Click"
+                HorizontalAlignment="Center" Width="120" Margin="10"/>
+            <Button Name="btnGray" Content="Trắng Đen" Click="BtnGray_Click"
+                HorizontalAlignment="Center" Width="120" Margin="10"/>
+            <Button Name="btnReverse" Content="Tua Ngược" Click="BtnReverse_Click"
+                HorizontalAlignment="Center" Width="120" Margin="10"/>
+            <Button Name="btnSlowMotion" Content="Slow Motion" Click="BtnSlowMotion_Click"
+                HorizontalAlignment="Center" Width="120" Margin="10"/>
+        </StackPanel>
+
+        <!-- Time Range Sliders -->
+        <StackPanel VerticalAlignment="Top" Margin="50,340,50,0">
+            <TextBlock Text="Thời gian bắt đầu" HorizontalAlignment="Left"
+                   FontWeight="Bold" Margin="10,10,0,5"/>
+            <StackPanel Orientation="Horizontal">
+                <Slider Name="StartTimeSlider" Minimum="0" Maximum="100" Value="10"
+                    HorizontalAlignment="Stretch" Width="500" Margin="10" Height="20"
+                    ValueChanged="StartTimeSlider_ValueChanged"/>
+                <TextBlock Name="StartTimeText" Text="00:00" FontSize="14" FontWeight="Bold" Margin="10"/>
+            </StackPanel>
+
+            <TextBlock Text="Thời gian kết thúc" HorizontalAlignment="Left"
+                   FontWeight="Bold" Margin="10,10,0,5"/>
+            <StackPanel Orientation="Horizontal">
+                <Slider Name="EndTimeSlider" Minimum="0" Maximum="100" Value="20"
+                    HorizontalAlignment="Stretch" Width="500" Margin="10" Height="20"
+                    ValueChanged="EndTimeSlider_ValueChanged"/>
+                <TextBlock Name="EndTimeText" Text="00:00" FontSize="14" FontWeight="Bold" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Return Button -->
+        <Button Content="Return" Click="BtnReturn_Click" HorizontalAlignment="Right"
+            VerticalAlignment="Bottom" Width="100" Margin="0,20,50,20"/>
     </Grid>
+
+
+
+
 </Window>

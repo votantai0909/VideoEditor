@@ -9,7 +9,7 @@ namespace VideoEditorProject.Services.Services
 {
     public class VideoService
     {
-        private static string ffmpegPath = @"D:\dowload\SE_KI_7\PRN212\FF\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe"; // Đảm bảo đường dẫn FFmpeg chính xác
+        private static string ffmpegPath = @"C:\Users\ASUS\Downloads\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe"; // Đảm bảo đường dẫn FFmpeg chính xác
 
         // Cắt video từ một đoạn
         public void CutVideo(string inputPath, string outputPath, TimeSpan start, TimeSpan duration)

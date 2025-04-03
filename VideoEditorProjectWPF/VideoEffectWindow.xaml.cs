@@ -1,27 +1,13 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 using VideoEditorProject.Services.Services;
-using Path = System.IO.Path;
+using Microsoft.Win32;
 
 namespace VideoEditorProjectWPF
 {
-    /// <summary>
-    /// Interaction logic for VideoEffectWindow.xaml
-    /// </summary>
     public partial class VideoEffectWindow : Window
     {
         private string _originalVideoPath;
@@ -33,6 +19,14 @@ namespace VideoEditorProjectWPF
         public VideoEffectWindow(string videoPath)
         {
             InitializeComponent();
+
+            Loaded += (s, e) =>
+            {
+                StartTimeSlider.ValueChanged += StartTimeSlider_ValueChanged;
+                EndTimeSlider.ValueChanged += EndTimeSlider_ValueChanged;
+                StartTimeSlider.PreviewMouseUp += StartTimeSlider_PreviewMouseUp; // Ensure video plays again after dragging
+                EndTimeSlider.PreviewMouseUp += EndTimeSlider_PreviewMouseUp; // Ensure video plays again after dragging
+            };
 
             var videoService = new VideoService();
             _videoService = videoService;
@@ -58,29 +52,90 @@ namespace VideoEditorProjectWPF
                 }
                 catch (Exception ex)
                 {
-
+                    MessageBox.Show($"Lỗi khi sao chép video: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
                 }
-            }
-            else
-            {
-
-                return;
             }
 
             InitializeTimer();
         }
 
+        private void StartTimeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (StartTimeText != null)
+            {
+                // Cập nhật thời gian hiển thị trên TextBlock
+                StartTimeText.Text = TimeSpan.FromSeconds(StartTimeSlider.Value).ToString(@"mm\:ss");
+            }
 
+            // Kiểm tra xem video có đang được phát hay không
+            bool isVideoPlaying = mediaPlayer.CanPause && mediaPlayer.Position < mediaPlayer.NaturalDuration.TimeSpan;
+
+            if (mediaPlayer != null && StartTimeSlider.IsMouseCaptured)
+            {
+                TimeSpan newPosision = TimeSpan.FromSeconds(StartTimeSlider.Value);
+                // Cập nhật vị trí video theo thời gian bắt đầu mới mà không dừng video
+                mediaPlayer.Position = newPosision;
+
+
+            }
+        }
+
+        private void EndTimeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (EndTimeText != null)
+            {
+                EndTimeText.Text = TimeSpan.FromSeconds(EndTimeSlider.Value).ToString(@"mm\:ss");
+            }
+        }
 
         private void InitializeTimer()
         {
             _timer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(500) };
             _timer.Tick += (s, e) =>
             {
-                if (mediaPlayer.NaturalDuration.HasTimeSpan)
-                    VideoSlider.Value = mediaPlayer.Position.TotalSeconds;
+                if (mediaPlayer != null && mediaPlayer.NaturalDuration.HasTimeSpan)
+                {
+                    double totalSeconds = mediaPlayer.NaturalDuration.TimeSpan.TotalSeconds;
+
+                    // Cập nhật giá trị tối đa của slider
+                    StartTimeSlider.Maximum = totalSeconds;
+                    EndTimeSlider.Maximum = totalSeconds;
+
+                    // Cập nhật slider theo video nếu người dùng chưa kéo slider
+                    if (!StartTimeSlider.IsMouseCaptured)
+                    {
+                        // Đảm bảo giá trị slider đồng bộ với vị trí video
+                        StartTimeSlider.Value = mediaPlayer.Position.TotalSeconds;
+                    }
+
+                    // Cập nhật TextBlock thời gian
+                    if (StartTimeText != null)
+                        StartTimeText.Text = TimeSpan.FromSeconds(StartTimeSlider.Value).ToString(@"mm\:ss");
+
+                    if (EndTimeText != null)
+                        EndTimeText.Text = TimeSpan.FromSeconds(EndTimeSlider.Value).ToString(@"mm\:ss");
+                }
             };
             _timer.Start();
+        }
+
+        private void StartTimeSlider_PreviewMouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            // Ensure that after dragging, the video continues playing
+            if (mediaPlayer != null)
+            {
+                mediaPlayer.Play();
+            }
+        }
+
+        private void EndTimeSlider_PreviewMouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            // Ensure that after dragging, the video continues playing
+            if (mediaPlayer != null)
+            {
+                mediaPlayer.Play();
+            }
         }
 
         private void PlayVideo(string videoPath)
@@ -89,7 +144,7 @@ namespace VideoEditorProjectWPF
             mediaPlayer.Play();
         }
 
-        private void ApplyEffect(string effectType)
+        private async void ApplyEffect(string effectType, double startTime, double endTime)
         {
             mediaPlayer.Pause();
 
@@ -101,8 +156,7 @@ namespace VideoEditorProjectWPF
 
             try
             {
-                // Sử dụng Task.Run để thực hiện tác vụ trong nền
-                Task.Run(() =>
+                await Task.Run(() =>
                 {
                     try
                     {
@@ -118,47 +172,67 @@ namespace VideoEditorProjectWPF
                                 _videoService.SlowMotion(_tempVideoPath, newTempPath, 2.0);
                                 break;
                             case "cut":
-                                _videoService.CutVideo(_tempVideoPath, newTempPath, TimeSpan.FromSeconds(10), TimeSpan.FromSeconds(20));
+                                _videoService.CutVideo(_tempVideoPath, newTempPath, TimeSpan.FromSeconds(startTime), TimeSpan.FromSeconds(endTime));
                                 break;
-                        }
-
-                        // Đóng cửa sổ loading trong luồng UI
-                        loadingWindow.Dispatcher.Invoke(() => loadingWindow.Close());
-
-                        // Kiểm tra nếu video tạm mới tồn tại
-                        if (File.Exists(newTempPath))
-                        {
-                            _tempVideoPath = newTempPath;
-                            _effects.Add(effectType);
-                            Dispatcher.Invoke(() => UpdateVideoPlayer()); // Gọi UpdateVideoPlayer trong luồng UI
-                        }
-                        else
-                        {
-                            Dispatcher.Invoke(() => MessageBox.Show("Lỗi áp dụng hiệu ứng!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error));
                         }
                     }
                     catch (Exception ex)
                     {
-                        // Đảm bảo thông báo lỗi trong luồng UI
-                        loadingWindow.Dispatcher.Invoke(() => loadingWindow.Close());
                         Dispatcher.Invoke(() => MessageBox.Show($"Có lỗi trong quá trình áp dụng hiệu ứng: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error));
                     }
                 });
+
+                // Đóng cửa sổ loading trong luồng UI
+                loadingWindow.Dispatcher.Invoke(() => loadingWindow.Close());
+
+                // Kiểm tra nếu video tạm mới tồn tại
+                if (File.Exists(newTempPath))
+                {
+                    _tempVideoPath = newTempPath;
+                    _effects.Add(effectType);
+                    Dispatcher.Invoke(() => UpdateVideoPlayer()); // Gọi UpdateVideoPlayer trong luồng UI
+                }
+                else
+                {
+                    Dispatcher.Invoke(() => MessageBox.Show("Lỗi áp dụng hiệu ứng!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error));
+                }
             }
             catch (Exception ex)
             {
+                // Đảm bảo thông báo lỗi trong luồng UI
                 loadingWindow.Dispatcher.Invoke(() => loadingWindow.Close());
-                MessageBox.Show($"Có lỗi trong quá trình áp dụng hiệu ứng: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                Dispatcher.Invoke(() => MessageBox.Show($"Có lỗi trong quá trình áp dụng hiệu ứng: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error));
             }
         }
+        // Cắt video
+        private void BtnCut_Click(object sender, RoutedEventArgs e)
+        {
+            double startTime = StartTimeSlider.Value;
+            double endTime = EndTimeSlider.Value;
+            ApplyEffect("cut", startTime, endTime);
+        }
 
+        // Trắng đen (Gray)
+        private void BtnGray_Click(object sender, RoutedEventArgs e)
+        {
 
+            ApplyEffect("gray", 0, 0);
+        }
 
+        // Tua ngược (Reverse)
+        private void BtnReverse_Click(object sender, RoutedEventArgs e)
+        {
 
-        private void BtnGray_Click(object sender, RoutedEventArgs e) => ApplyEffect("gray");
-        private void BtnReverse_Click(object sender, RoutedEventArgs e) => ApplyEffect("reverse");
-        private void BtnSlowMotion_Click(object sender, RoutedEventArgs e) => ApplyEffect("slowmotion");
-        private void BtnCut_Click(object sender, RoutedEventArgs e) => ApplyEffect("cut");
+            ApplyEffect("reverse", 0, 0);
+        }
+
+        // Slow Motion
+        private void BtnSlowMotion_Click(object sender, RoutedEventArgs e)
+        {
+
+            ApplyEffect("slowmotion", 0, 0);
+        }
+
 
         private void UpdateVideoPlayer()
         {
@@ -173,7 +247,27 @@ namespace VideoEditorProjectWPF
             mediaPlayer.Play();
         }
 
-
+        private Window CreateLoadingWindow()
+        {
+            Window loadingWindow = new Window
+            {
+                Title = "Đang xử lý...",
+                Width = 300,
+                Height = 100,
+                WindowStartupLocation = WindowStartupLocation.CenterOwner,
+                ResizeMode = ResizeMode.NoResize,
+                Topmost = true,
+                ShowInTaskbar = false,
+                Content = new System.Windows.Controls.Label
+                {
+                    Content = "Đang áp dụng hiệu ứng, vui lòng chờ...",
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center,
+                    FontSize = 14
+                }
+            };
+            return loadingWindow;
+        }
 
         private void BtnReturn_Click(object sender, RoutedEventArgs e)
         {
@@ -236,36 +330,14 @@ namespace VideoEditorProjectWPF
             this.Close();
         }
 
-
-        private void VideoSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
-            if (mediaPlayer.NaturalDuration.HasTimeSpan)
-            {
-                // Nếu giá trị của slider thay đổi, cập nhật video
-                mediaPlayer.Position = TimeSpan.FromSeconds(VideoSlider.Value);
-            }
+            mediaPlayer.Play();
         }
 
-        private Window CreateLoadingWindow()
+        private void BtnPause_Click(object sender, RoutedEventArgs e)
         {
-            Window loadingWindow = new Window
-            {
-                Title = "Đang xử lý...",
-                Width = 300,
-                Height = 100,
-                WindowStartupLocation = WindowStartupLocation.CenterOwner,
-                ResizeMode = ResizeMode.NoResize,
-                Topmost = true,
-                ShowInTaskbar = false,
-                Content = new System.Windows.Controls.Label
-                {
-                    Content = "Đang áp dụng hiệu ứng, vui lòng chờ...",
-                    HorizontalAlignment = HorizontalAlignment.Center,
-                    VerticalAlignment = VerticalAlignment.Center,
-                    FontSize = 14
-                }
-            };
-            return loadingWindow;
+            mediaPlayer.Pause();
         }
     }
 }

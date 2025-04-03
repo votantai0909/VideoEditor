@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj": {}
+    "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj": {}
   },
   "projects": {
-    "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj": {
+    "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
+        "projectUniqueName": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
         "projectName": "VideoEditorProject.Repositories",
-        "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
-        "packagesPath": "C:\\Users\\vo tan tai\\.nuget\\packages\\",
-        "outputPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\obj\\",
+        "projectPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Repositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vo tan tai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\vo tan tai\\.nuget\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -91,21 +96,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj": {
+    "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
+        "projectUniqueName": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
         "projectName": "VideoEditorProject.Services",
-        "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
-        "packagesPath": "C:\\Users\\vo tan tai\\.nuget\\packages\\",
-        "outputPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\obj\\",
+        "projectPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vo tan tai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,15 +122,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\vo tan tai\\.nuget\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj": {
-                "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj"
+              "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj": {
+                "projectPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj"
               }
             }
           }
@@ -135,7 +144,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -156,21 +166,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj": {
+    "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+        "projectUniqueName": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
         "projectName": "VideoEditorProjectWPF",
-        "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
-        "packagesPath": "C:\\Users\\vo tan tai\\.nuget\\packages\\",
-        "outputPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\obj\\",
+        "projectPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProjectWPF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vo tan tai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -178,15 +192,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\vo tan tai\\.nuget\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj": {
-                "projectPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj"
+              "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj": {
+                "projectPath": "D:\\PRN Group Pro\\videoEdiorCheck2\\VideoEditor\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj"
               }
             }
           }
@@ -200,7 +214,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -230,7 +245,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

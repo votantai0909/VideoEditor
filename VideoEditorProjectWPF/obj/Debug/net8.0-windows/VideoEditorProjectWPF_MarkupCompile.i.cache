@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProjectWPF\obj\Debug\net8.0-windows\
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProjectWPF\obj\Debug\net8.0-windows\
 VideoEditorProjectWPF
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\dowload\SE_KI_7\PRN212\NEWGIT\VideoEditorProjectWPF\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+D:\PRN Group Pro\videoEdiorCheck2\VideoEditor\VideoEditorProjectWPF\App.xaml
 31159347171
 
 8-1089827912
-236-1101775860
+236-2015376393
 LoginWindow.xaml;MainWindow.xaml;VideoEffectWindow.xaml;
 
 True
