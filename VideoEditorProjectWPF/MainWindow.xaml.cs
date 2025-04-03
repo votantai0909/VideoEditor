@@ -343,5 +343,46 @@ namespace VideoEditorProjectWPF
                 }
             }
         }
+
+        private void OpenEffectWindow_Click(object sender, RoutedEventArgs e)
+        {
+            if (VideoPlayer.Source != null)
+            {
+
+
+                string videoPath = VideoPlayer.Source.LocalPath;
+
+                if (File.Exists(videoPath)) // 🔹 Kiểm tra file trước khi mở hiệu ứng
+                {
+                    // Khởi tạo VideoService trực tiếp trong đây
+                    VideoService videoService = new VideoService();  // Không cần truyền VideoService từ bên ngoài
+
+                    // Truyền videoService trực tiếp vào cửa sổ hiệu ứng
+                    VideoEffectWindow effectWindow = new VideoEffectWindow(videoPath);  // Truyền videoPath, không cần truyền videoService
+
+                    if (effectWindow.ShowDialog() == true)
+                    {
+                        string editedVideoPath = effectWindow.Tag as string;
+                        if (!string.IsNullOrEmpty(editedVideoPath) && File.Exists(editedVideoPath))
+                        {
+                            VideoPlayer.Source = new Uri(editedVideoPath);
+                            VideoPlayer.Play();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy video đã chỉnh sửa!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("File gốc không tồn tại!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn video trước!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
     }
 }

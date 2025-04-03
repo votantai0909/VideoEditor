@@ -60,6 +60,7 @@
             <Label Content="volume" Height="30" Margin="10,0,0,0" Foreground="#FFEFE1E1"/>
             <Slider Name="MusicVolumeSlider" Minimum="0" Maximum="1" Value="0.5" Width="100" Height="27" Margin="0,8,10,0" ValueChanged="MusicVolumeSlider_ValueChanged" RenderTransformOrigin="0.53,1.367" />
             <Button Content="🎵 Thêm Nhạc" Width="100" Height="30" Click="AddMusic_Click" Margin="5,0,10,0"/>
+            <Button Content="chỉnh sửa hiệu ứng" Click="OpenEffectWindow_Click" Height="30" Width="88" RenderTransformOrigin="1.529,0.555"/>
         </StackPanel>
     </Grid>
 </Window>
