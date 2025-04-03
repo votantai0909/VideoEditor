@@ -27,6 +27,8 @@ namespace VideoEditorProjectWPF
             UnloadedBehavior = MediaState.Stop
         };
         private DispatcherTimer timer;
+        private Point _dragStartPoint;
+        private DateTime _lastClickTime;
         public MainWindow()
         {
             InitializeComponent();
@@ -137,8 +139,6 @@ namespace VideoEditorProjectWPF
             }
         }
 
-
-
         private void SpeedSelector_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (SpeedSelector.SelectedItem is ComboBoxItem selectedItem)
@@ -150,7 +150,6 @@ namespace VideoEditorProjectWPF
                 MusicPlayer.SpeedRatio = speed;
             }
         }
-
 
         private async void LoadMusicList()
         {
@@ -218,5 +217,118 @@ namespace VideoEditorProjectWPF
             }
         }
 
+        private void AddTextToVideo_Click(object sender, RoutedEventArgs e)
+        {
+            string text = TextToAdd.Text;
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                MessageBox.Show("Vui lòng nhập văn bản trước khi chèn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Tạo một TextBlock mới để làm watermark
+            TextBlock watermarkText = new TextBlock
+            {
+                Text = text,
+                Foreground = Brushes.White,
+                FontSize = 24,
+                FontWeight = FontWeights.Bold,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Top,
+                Margin = new Thickness(10, 10, 0, 0),
+                Visibility = Visibility.Visible
+            };
+
+            watermarkText.MouseLeftButtonDown += WatermarkText_MouseLeftButtonDown; // Thêm sự kiện nhấn chuột
+            watermarkText.MouseMove += WatermarkText_MouseMove;
+            watermarkText.MouseLeftButtonUp += WatermarkText_MouseLeftButtonUp;
+
+            // Thêm TextBlock vào Canvas (container chứa video)
+            VideoCanvas.Children.Add(watermarkText);
+        }
+
+        private void WatermarkText_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var watermarkText = (TextBlock)sender;
+            var currentClickTime = DateTime.Now;
+
+            // Kiểm tra thời gian giữa các lần nhấn để xác định nếu là đúp chuột
+            if ((currentClickTime - _lastClickTime).TotalMilliseconds <= 500)
+            {
+                // Nếu là nhấn đúp chuột, cho phép chỉnh sửa văn bản
+                EditWatermarkText(watermarkText);
+            }
+
+            _lastClickTime = currentClickTime;
+
+            _dragStartPoint = e.GetPosition(watermarkText);
+            watermarkText.CaptureMouse(); // Capture the mouse events to the watermark
+        }
+
+        private void WatermarkText_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                var watermarkText = (TextBlock)sender;
+                var currentPosition = e.GetPosition(VideoCanvas);
+
+                // Cập nhật vị trí watermark khi kéo chuột
+                double left = currentPosition.X - _dragStartPoint.X;
+                double top = currentPosition.Y - _dragStartPoint.Y;
+
+                // Đặt lại vị trí mới cho watermark
+                Canvas.SetLeft(watermarkText, left);
+                Canvas.SetTop(watermarkText, top);
+            }
+        }
+
+        private void WatermarkText_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            var watermarkText = (TextBlock)sender;
+            watermarkText.ReleaseMouseCapture(); // Release mouse capture khi kết thúc kéo
+        }
+
+        private void EditWatermarkText(TextBlock watermarkText)
+        {
+            // Tạo một TextBox để người dùng chỉnh sửa văn bản
+            TextBox editTextBox = new TextBox
+            {
+                Text = watermarkText.Text,
+                FontSize = watermarkText.FontSize,
+                FontWeight = watermarkText.FontWeight,
+                Foreground = watermarkText.Foreground,
+                Width = watermarkText.ActualWidth,
+                Height = watermarkText.ActualHeight,
+                Background = Brushes.Transparent,
+                BorderBrush = Brushes.Transparent
+            };
+
+            // Cập nhật lại TextBlock khi TextBox mất focus
+            editTextBox.LostFocus += (s, args) =>
+            {
+                watermarkText.Text = editTextBox.Text; // Cập nhật lại văn bản
+                VideoCanvas.Children.Remove(editTextBox); // Xóa TextBox
+                VideoCanvas.Children.Add(watermarkText); // Thêm TextBlock với văn bản mới
+            };
+
+            // Thay thế TextBlock bằng TextBox để chỉnh sửa
+            VideoCanvas.Children.Remove(watermarkText);
+            VideoCanvas.Children.Add(editTextBox);
+            editTextBox.Focus(); // Focus vào TextBox để người dùng có thể nhập
+        }
+
+
+        private void DeleteTextButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Loop through all the children in the Canvas to find TextBlock elements
+            foreach (var child in VideoCanvas.Children)
+            {
+                if (child is TextBlock watermarkText)
+                {
+                    VideoCanvas.Children.Remove(watermarkText);
+                    break; // Exit the loop after removing the first watermark
+                }
+            }
+        }
     }
 }
