@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VideoEditorProject.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fab0ec34008d6ae28cc58a60c5dc9ce819bc988a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aed86ba802a91f3e220397f7ee3b09cfc3b212f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("VideoEditorProject.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VideoEditorProject.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

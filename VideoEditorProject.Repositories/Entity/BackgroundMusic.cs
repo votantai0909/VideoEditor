@@ -9,7 +9,7 @@ public partial class BackgroundMusic
 
     public int? VideoId { get; set; }
 
-    public String Name { get; set; }
+    public string Name { get; set; } = null!;
 
     public string FilePath { get; set; } = null!;
 
