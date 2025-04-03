@@ -1,85 +1,98 @@
 ﻿using System;
 using System.Diagnostics;
-using System.IO;
-using VideoEditorProject.Repositories.Repositories.Implement;
 
 namespace VideoEditorProject.Services.Services
 {
     public class VideoService
     {
-        private readonly VideoRepository _videoRepository;
+        private static string ffmpegPath = @"C:\Users\ASUS\Downloads\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe"; // Đảm bảo đường dẫn FFmpeg chính xác
 
-        // Constructor không cần nhận vào VideoRepository nữa
-        public VideoService()
-        {
-            _videoRepository = new VideoRepository(); // Khởi tạo VideoRepository trong constructor
-        }
-
+        // Cắt video từ một đoạn
         public void CutVideo(string inputPath, string outputPath, TimeSpan start, TimeSpan duration)
         {
-            // Sử dụng phương thức của VideoRepository để lưu video
-            string videoPath = _videoRepository.SaveVideo(inputPath, outputPath);
-            var args = $"-i \"{videoPath}\" -ss {start} -t {duration} -c copy \"{outputPath}\"";
-            RunFFmpeg(args);
+            string startTime = start.ToString(@"hh\:mm\:ss");
+            string durationTime = duration.ToString(@"hh\:mm\:ss");
+
+            // Cấu hình lệnh FFmpeg để cắt video
+            string ffmpegArgs = $"-i \"{inputPath}\" -ss {startTime} -t {durationTime} -c:v libx264 -c:a aac -strict experimental \"{outputPath}\"";
+
+            // Gọi FFmpeg qua dòng lệnh
+            ExecuteFFmpegCommand(ffmpegArgs);
         }
 
-        public void MergeVideos(string[] inputPaths, string outputPath)
-        {
-            string listFile = "videos.txt";
-            File.WriteAllLines(listFile, inputPaths);
-
-            var args = $"-f concat -safe 0 -i \"{listFile}\" -c copy \"{outputPath}\"";
-            RunFFmpeg(args);
-        }
-
+        // Áp dụng hiệu ứng cho video
         public void ApplyEffect(string inputPath, string outputPath, string effect)
         {
-            string args = effect switch
+            string filter = effect switch
             {
-                "gray" => $"-i \"{inputPath}\" -vf format=gray \"{outputPath}\"",
-                "blur" => $"-i \"{inputPath}\" -vf \"boxblur=5\" \"{outputPath}\"",
-                "reverse" => $"-i \"{inputPath}\" -vf reverse -af areverse \"{outputPath}\"",
-                "slow" => $"-i \"{inputPath}\" -filter:v \"setpts=2.0*PTS\" \"{outputPath}\"",
-                _ => throw new Exception("Hiệu ứng không hợp lệ!")
+                "gray" => "hue=s=0", // Hiệu ứng grayscale
+                "blur" => "gblur=sigma=5", // Hiệu ứng blur
+                _ => throw new ArgumentException("Unsupported effect")
             };
 
-            RunFFmpeg(args);
+            // Cấu hình lệnh FFmpeg để áp dụng hiệu ứng
+            string ffmpegArgs = $"-i \"{inputPath}\" -vf \"{filter}\" -c:v libx264 -c:a aac \"{outputPath}\"";
+
+            // Gọi FFmpeg qua dòng lệnh
+            ExecuteFFmpegCommand(ffmpegArgs);
         }
 
-        public void ReverseVideo(string inputPath, string outputPath)
-        {
-            string args = $"-i \"{inputPath}\" -vf reverse -af areverse \"{outputPath}\"";
-            RunFFmpeg(args);
-        }
-
+        // Hiệu ứng Slow Motion
         public void SlowMotion(string inputPath, string outputPath, double speedFactor)
         {
-            string args = $"-i \"{inputPath}\" -filter:v \"setpts={speedFactor}*PTS\" \"{outputPath}\"";
-            RunFFmpeg(args);
+            // Cấu hình filter slow-motion
+            string filter = $"setpts={speedFactor}*PTS";
+
+            // Cấu hình lệnh FFmpeg để áp dụng slow-motion
+            string ffmpegArgs = $"-i \"{inputPath}\" -vf \"{filter}\" -c:v libx264 -c:a aac \"{outputPath}\"";
+
+            // Gọi FFmpeg qua dòng lệnh
+            ExecuteFFmpegCommand(ffmpegArgs);
         }
 
-        public void RunFFmpeg(string arguments)
+        // Hàm gọi FFmpeg qua dòng lệnh
+        private void ExecuteFFmpegCommand(string args)
         {
-            var processStartInfo = new ProcessStartInfo
+            Process ffmpegProcess = new Process();
+            ffmpegProcess.StartInfo.FileName = ffmpegPath; // Đảm bảo đường dẫn FFmpeg chính xác
+            ffmpegProcess.StartInfo.Arguments = args;
+            ffmpegProcess.StartInfo.RedirectStandardOutput = true;
+            ffmpegProcess.StartInfo.RedirectStandardError = true;
+            ffmpegProcess.StartInfo.UseShellExecute = false;
+            ffmpegProcess.StartInfo.CreateNoWindow = true;
+
+            // Đọc lỗi từ FFmpeg
+            ffmpegProcess.ErrorDataReceived += (sender, e) =>
             {
-                FileName = "ffmpeg",
-                Arguments = arguments,
-                RedirectStandardOutput = true,
-                RedirectStandardError = true,
-                UseShellExecute = false,
-                CreateNoWindow = true
+                if (e.Data != null)
+                {
+                    Console.WriteLine("FFmpeg Error: " + e.Data);
+                }
             };
 
-            using (var process = new Process { StartInfo = processStartInfo })
+            // Chạy tiến trình và đợi kết quả
+            ffmpegProcess.Start();
+            ffmpegProcess.BeginErrorReadLine();
+            ffmpegProcess.WaitForExit();
+
+            if (ffmpegProcess.ExitCode == 0)
             {
-                process.Start();
-
-                string error = process.StandardError.ReadToEnd();
-                Console.WriteLine("FFmpeg Error: " + error);
-
-                process.WaitForExit();
-                Console.WriteLine("FFmpeg Done!");
+                Console.WriteLine("Operation successful!");
+            }
+            else
+            {
+                Console.WriteLine("Error during operation.");
             }
         }
+        // Hàm tạo video reverse (tua ngược video)
+        public void ReverseVideo(string inputPath, string outputPath)
+        {
+            // Cấu hình lệnh FFmpeg để tạo hiệu ứng reverse
+            string ffmpegArgs = $"-i \"{inputPath}\" -vf reverse -af areverse -c:v libx264 -c:a aac \"{outputPath}\"";
+
+            // Gọi FFmpeg qua dòng lệnh
+            ExecuteFFmpegCommand(ffmpegArgs);
+        }
+
     }
 }

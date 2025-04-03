@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\PRN Group Pro\\VideoEditor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\prn group pro\\videoeditor\\videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\prn group pro\\videoeditor\\videoeditorprojectwpf\\videoeffectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\videoeffectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +15,24 @@
       "RelativeMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|solutionrelative:videoeditorproject.service\\interface\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|d:\\prn group pro\\videoeditor\\videoeditorproject.repositories\\repositories\\implement\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|solutionrelative:videoeditorproject.repositories\\repositories\\implement\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\prn group pro\\videoeditor\\videoeditorprojectwpf\\videoeffectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\videoeffectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\prn group pro\\videoeditor\\videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\prn group pro\\videoeditor\\videoeditorprojectwpf\\videoeditorprojectwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\videoeditorprojectwpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\prn group pro\\videoeditor\\videoeditorprojectwpf\\videoeditorprojectwpf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\videoeditorprojectwpf.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|d:\\prn group pro\\videoeditor\\videoeditorproject.service\\videoeditorproject.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|solutionrelative:videoeditorproject.service\\videoeditorproject.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|d:\\prn group pro\\videoeditor\\videoeditorproject.repositories\\repositories\\implement\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|solutionrelative:videoeditorproject.repositories\\repositories\\implement\\videorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\prn group pro\\videoeditor\\videoeditorprojectwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -65,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|d:\\prn group pro\\videoeditor\\videoeditorproject.repositories\\videoeditordbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AEF8FF0-FCD4-49DE-B659-025E7E23FFB4}|VideoEditorProject.Repositories\\VideoEditorProject.Repositories.csproj|solutionrelative:videoeditorproject.repositories\\videoeditordbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|d:\\prn group pro\\videoeditor\\videoeditorproject.service\\videoeditorproject.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|solutionrelative:videoeditorproject.service\\videoeditorproject.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,37 +86,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VideoEffectWindow.xaml.cs",
-              "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "ToolTip": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAAAYwN4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T06:24:31.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "VideoService.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Service\\Interface\\VideoService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Interface\\VideoService.cs",
               "ToolTip": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Service\\Interface\\VideoService.cs",
               "RelativeToolTip": "VideoEditorProject.Service\\Interface\\VideoService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAiwE0AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T13:21:20.981Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "VideoEditorProjectWPF",
+              "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "ToolTip": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-03T11:37:03.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VideoEditorProjectWPF.csproj",
+              "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "ToolTip": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-03T11:33:29.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AccountService.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Service\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\AccountService.cs",
@@ -131,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\MainWindow.xaml",
@@ -142,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "VideoRepository.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\Repositories\\Implement\\VideoRepository.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Repositories\\Implement\\VideoRepository.cs",
@@ -154,19 +172,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
               "ToolTip": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwEsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAvwG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:26:00.518Z"
+              "WhenOpened": "2025-03-28T16:26:00.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "VideoEffectWindow.xaml.cs",
+              "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "ToolTip": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:24:31.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\LoginWindow.xaml.cs",
@@ -178,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Repositories\\AccountRepository.cs",
@@ -190,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\LoginWindow.xaml",
@@ -201,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "IVideoService.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Service\\Interface\\IVideoService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Interface\\IVideoService.cs",
@@ -213,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Account.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\Entity\\Account.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Entity\\Account.cs",
@@ -225,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Video.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\Entity\\Video.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Entity\\Video.cs",
@@ -237,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "IVideoRepository.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\Repositories\\Interface\\IVideoRepository.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\Repositories\\Interface\\IVideoRepository.cs",
@@ -249,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "VideoEditorDbContext.cs",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Repositories\\VideoEditorDbContext.cs",
@@ -261,19 +292,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "VideoEditorProject.Services.csproj",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
               "ToolTip": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
               "RelativeToolTip": "VideoEditorProject.Service\\VideoEditorProject.Services.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-03-30T13:22:35.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PRN Group Pro\\VideoEditor\\VideoEditorProjectWPF\\appsettings.json",
               "RelativeDocumentMoniker": "VideoEditorProjectWPF\\appsettings.json",

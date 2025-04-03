@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.10.0.5680" />
+    <PackageReference Include="FFmpeg.AutoGen" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\VideoEditorProject.Service\VideoEditorProject.Services.csproj">
       <Private>True</Private>
     </ProjectReference>

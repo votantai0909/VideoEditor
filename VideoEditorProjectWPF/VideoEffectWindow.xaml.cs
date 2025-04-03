@@ -45,12 +45,12 @@ namespace VideoEditorProjectWPF
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Lỗi sao chép video: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                    
                 }
             }
             else
             {
-                MessageBox.Show("Video gốc không tồn tại!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                
                 return;
             }
 
@@ -71,10 +71,10 @@ namespace VideoEditorProjectWPF
         }
 
         private void PlayVideo(string videoPath)
-    {
-        mediaPlayer.Source = new Uri(videoPath);
-        mediaPlayer.Play();
-    }
+        {
+            mediaPlayer.Source = new Uri(videoPath);
+            mediaPlayer.Play();
+        }
 
         private void ApplyEffect(string effectType)
         {

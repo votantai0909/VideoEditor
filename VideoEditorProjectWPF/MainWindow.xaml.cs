@@ -105,7 +105,7 @@ namespace VideoEditorProjectWPF
         {
             if (VideoPlayer.Source != null)
             {
-                MessageBox.Show($"Video Path: {VideoPlayer.Source?.LocalPath}");
+                
 
                 string videoPath = VideoPlayer.Source.LocalPath;
 

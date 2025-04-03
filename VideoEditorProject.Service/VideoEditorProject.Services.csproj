@@ -2,9 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.10.0.5680" />
+    <PackageReference Include="FFmpeg.AutoGen" Version="7.0.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\VideoEditorProject.Repositories\VideoEditorProject.Repositories.csproj">
