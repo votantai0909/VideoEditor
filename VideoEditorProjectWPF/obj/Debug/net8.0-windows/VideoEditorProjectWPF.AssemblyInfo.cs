@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VideoEditorProjectWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+118098ba726da4b23152ca14e564f7829eff7f6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71751395c10a427a962a2d37a2d9a543697ba7c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("VideoEditorProjectWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VideoEditorProjectWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
