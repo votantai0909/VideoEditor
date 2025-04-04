@@ -157,7 +157,7 @@ namespace VideoEditorProjectWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/VideoEditorProjectWPF;component/videoeffectwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/VideoEditorProjectWPF;V1.0.0.0;component/videoeffectwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\VideoEffectWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

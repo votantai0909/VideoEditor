@@ -38,6 +38,7 @@ namespace VideoEditorProjectWPF
             {
                 StartTimeSlider.ValueChanged += StartTimeSlider_ValueChanged;
                 EndTimeSlider.ValueChanged += EndTimeSlider_ValueChanged;
+
                 StartTimeSlider.PreviewMouseUp += StartTimeSlider_PreviewMouseUp; // Ensure video plays again after dragging
                 EndTimeSlider.PreviewMouseUp += EndTimeSlider_PreviewMouseUp; // Ensure video plays again after dragging
             };
@@ -139,6 +140,8 @@ namespace VideoEditorProjectWPF
             // Ensure that after dragging, the video continues playing
             if (mediaPlayer != null)
             {
+                TimeSpan newPosition = TimeSpan.FromSeconds(StartTimeSlider.Value);
+                mediaPlayer.Position = newPosition;
                 mediaPlayer.Play();
             }
         }
@@ -221,8 +224,14 @@ namespace VideoEditorProjectWPF
         // Cắt video
         private void BtnCut_Click(object sender, RoutedEventArgs e)
         {
+
             double startTime = StartTimeSlider.Value;
             double endTime = EndTimeSlider.Value;
+            if (endTime <= startTime)
+            {
+                MessageBox.Show("Thời gian kết thúc phải lớn hơn thời gian bắt đầu.", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             ApplyEffect("cut", startTime, endTime);
         }
 
