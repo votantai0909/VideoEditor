@@ -353,6 +353,15 @@ namespace VideoEditorProjectWPF
         {
             mediaPlayer.Pause();
         }
-        
+
+        private void BtnRestart_Click(object sender, RoutedEventArgs e)
+        {
+            if (mediaPlayer.Source != null)
+            {
+                mediaPlayer.Stop(); 
+                mediaPlayer.Position = TimeSpan.Zero; 
+                mediaPlayer.Play(); 
+            }
+        }
     }
 }

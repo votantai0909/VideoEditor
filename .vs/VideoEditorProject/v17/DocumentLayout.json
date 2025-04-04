@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\videoeffectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\videoeffectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\videoeffectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorproject.service\\services\\backgroundmusicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07A4FE18-A451-4DB1-A0CD-EDAED9CE0B11}|VideoEditorProject.Service\\VideoEditorProject.Services.csproj|solutionrelative:videoeditorproject.service\\services\\backgroundmusicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|solutionrelative:videoeditorprojectwpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6E31EF8-C801-4B7B-BC46-A7582B05F522}|VideoEditorProjectWPF\\VideoEditorProjectWPF.csproj|d:\\dowload\\se_ki_7\\prn212\\newgit\\videoeditorprojectwpf\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -114,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,6 +138,79 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoEffectWindow.xaml",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEffectWindow.xaml",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml",
+              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEffectWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-03T15:37:13.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VideoEffectWindow.xaml.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
+              "ViewState": "AQIAAAIBAAAAAAAAAAAIwBYBAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:37:26.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VideoWatermarkService.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
+              "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
+              "RelativeToolTip": "VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:07:43.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAIAwwFsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T06:50:19.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\LoginWindow.xaml",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\LoginWindow.xaml",
+              "RelativeToolTip": "VideoEditorProjectWPF\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-28T08:12:13.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\App.xaml",
+              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\App.xaml",
+              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\App.xaml",
+              "RelativeToolTip": "VideoEditorProjectWPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-28T08:11:46.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\MainWindow.xaml",
@@ -150,68 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VideoEffectWindow.xaml",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml",
-              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEffectWindow.xaml",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml",
-              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEffectWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-03T15:37:13.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VideoEffectWindow.xaml.cs",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "RelativeToolTip": "VideoEditorProjectWPF\\VideoEffectWindow.xaml.cs",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAkwI0AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:37:26.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "VideoWatermarkService.cs",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
-              "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
-              "RelativeToolTip": "VideoEditorProject.Service\\Services\\VideoWatermarkService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:07:43.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "VideoEditorProjectWPF\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAIAwwFsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T06:50:19.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\LoginWindow.xaml",
-              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\LoginWindow.xaml",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\LoginWindow.xaml",
-              "RelativeToolTip": "VideoEditorProjectWPF\\LoginWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T08:12:13.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "AccountService.cs",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\AccountService.cs",
@@ -223,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "OverlayContentService.cs",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\OverlayContentService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\OverlayContentService.cs",
@@ -235,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BackgroundMusicService.cs",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\BackgroundMusicService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\BackgroundMusicService.cs",
@@ -247,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "VideoService.cs",
               "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProject.Service\\Services\\VideoService.cs",
               "RelativeDocumentMoniker": "VideoEditorProject.Service\\Services\\VideoService.cs",
@@ -256,18 +268,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T15:37:57.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\App.xaml",
-              "RelativeDocumentMoniker": "VideoEditorProjectWPF\\App.xaml",
-              "ToolTip": "D:\\dowload\\SE_KI_7\\PRN212\\NEWGIT\\VideoEditorProjectWPF\\App.xaml",
-              "RelativeToolTip": "VideoEditorProjectWPF\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T08:11:46.591Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
