@@ -233,7 +233,7 @@ namespace VideoEditorProjectWPF
             }
         }
 
-        private async void AddTextToVideo_Click(object sender, RoutedEventArgs e)
+        /*private void AddTextToVideo_Click(object sender, RoutedEventArgs e)
         {
             string text = TextToAdd.Text;
             if (string.IsNullOrWhiteSpace(text))
@@ -246,7 +246,7 @@ namespace VideoEditorProjectWPF
             TextBlock watermarkText = new TextBlock
             {
                 Text = text,
-                Foreground = Brushes.White,
+                Foreground = Brushes.Red,
                 FontSize = 24,
                 FontWeight = FontWeights.Bold,
                 HorizontalAlignment = HorizontalAlignment.Left,
@@ -261,7 +261,7 @@ namespace VideoEditorProjectWPF
 
             // Thêm TextBlock vào Canvas (container chứa video)
             VideoCanvas.Children.Add(watermarkText);
-        }
+        }*/
 
         private void WatermarkText_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -386,6 +386,64 @@ namespace VideoEditorProjectWPF
             }
         }
 
+        private async void AddTextToVideo_Click(object sender, RoutedEventArgs e)
+        {
+            string text = TextToAdd.Text;
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                MessageBox.Show("Vui lòng nhập văn bản trước khi chèn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Tạo một TextBlock mới để làm watermark
+            watermarkText = new TextBlock
+            {
+                Text = text,
+                Foreground = Brushes.Red,
+                FontSize = 24,
+                FontWeight = FontWeights.Bold,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Top,
+                Margin = new Thickness(10, 10, 0, 0),
+                Visibility = Visibility.Visible
+            };
+
+            watermarkText.MouseLeftButtonDown += WatermarkText_MouseLeftButtonDown; // Thêm sự kiện nhấn chuột
+            watermarkText.MouseMove += WatermarkText_MouseMove;
+            watermarkText.MouseLeftButtonUp += WatermarkText_MouseLeftButtonUp;
+
+            // Thêm TextBlock vào Canvas (container chứa video)
+            VideoCanvas.Children.Add(watermarkText);
+
+            // Câu lệnh để lưu video với watermark
+            if (VideoPlayer.Source != null)
+            {
+                string videoPath = VideoPlayer.Source.LocalPath;
+                string outputPath = Path.Combine(Path.GetDirectoryName(videoPath), "output_with_watermark.mp4");
+
+                await SaveVideoWithWatermarkAsync(videoPath, outputPath);
+
+                // Cập nhật lại video sau khi lưu
+                VideoPlayer.Source = new Uri(outputPath);
+                VideoPlayer.Play();
+            }
+        }
+        private async Task SaveVideoWithWatermarkAsync(string videoPath, string outputPath)
+        {
+            string ffmpegPath = @"D:\dowload\SE_KI_7\PRN212\FF\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe";
+
+            if (!File.Exists(ffmpegPath))
+            {
+                MessageBox.Show("Không tìm thấy FFmpeg. Vui lòng kiểm tra lại đường dẫn!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // Câu lệnh FFmpeg để thêm watermark vào video
+            string arguments = $"-i \"{videoPath}\" -vf \"drawtext=text='{WatermarkText.Text}':x=10:y=10:fontcolor=white:fontsize=24\" -c:a copy \"{outputPath}\"";
+
+            // Thực thi câu lệnh FFmpeg
+            await RunFFmpegCommand(arguments);
+        }
         private async Task RunFFmpegCommand(string arguments)
         {
             string ffmpegPath = @"D:\dowload\SE_KI_7\PRN212\FF\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe";
@@ -415,6 +473,68 @@ namespace VideoEditorProjectWPF
                 MessageBox.Show(output, "FFmpeg Output", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
+
+        private async void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Đảm bảo rằng video đã được tải vào MediaPlayer
+            if (VideoPlayer.Source != null)
+            {
+                string videoPath = VideoPlayer.Source.LocalPath;
+
+                // Kiểm tra xem video có tồn tại không
+                if (File.Exists(videoPath))
+                {
+                    // Gọi hàm lưu video với các hiệu ứng và văn bản đã chỉnh sửa
+                    await SaveVideoWithText(videoPath);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy file video.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng mở một video trước khi lưu.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private async Task SaveVideoWithText(string videoPath)
+        {
+            string outputVideoPath = Path.Combine(Path.GetDirectoryName(videoPath), "output_video_with_text.mp4");
+
+            // Xây dựng lệnh FFmpeg để chèn văn bản vào video
+            string arguments = $"-i \"{videoPath}\" -vf \"drawtext=text='{TextToAdd.Text}':fontcolor=white:fontsize=24:x=10:y=10\" -codec:a copy \"{outputVideoPath}\"";
+
+            try
+            {
+                // Thực thi lệnh FFmpeg
+                await RunFFmpegCommand1(arguments);
+                MessageBox.Show("Video đã được lưu thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi lưu video: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private async Task RunFFmpegCommand1(string arguments)
+        {
+            // Thực thi FFmpeg với các tham số đã cho
+            Process ffmpegProcess = new Process();
+            ffmpegProcess.StartInfo.FileName = @"D:\dowload\SE_KI_7\PRN212\FF\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe"; // Đảm bảo rằng đường dẫn đến FFmpeg đã được thêm vào biến môi trường PATH
+            ffmpegProcess.StartInfo.Arguments = arguments;
+            ffmpegProcess.StartInfo.RedirectStandardOutput = true;
+            ffmpegProcess.StartInfo.RedirectStandardError = true;
+            ffmpegProcess.StartInfo.UseShellExecute = false;
+            ffmpegProcess.StartInfo.CreateNoWindow = true;
+
+            await Task.Run(() =>
+            {
+                ffmpegProcess.Start();
+                ffmpegProcess.WaitForExit();
+            });
+        }
+
     }
 }
     
