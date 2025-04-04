@@ -5,15 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VideoEditorProjectWPF"
         mc:Ignorable="d"
-        Title="VideoEffectWindow" Height="450" Width="800">
-    <Grid>
-        <MediaElement Name="mediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Manual" HorizontalAlignment="Left" Height="296" Margin="71,40,0,0" VerticalAlignment="Top" Width="672"/>
-        <Button Name="btnCut" Content="Cắt Video" Click="BtnCut_Click" HorizontalAlignment="Left" Margin="71,381,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnGray" Content="Trắng Đen" Click="BtnGray_Click" HorizontalAlignment="Left" Margin="150,381,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnReverse" Content="Tua Ngược" Click="BtnReverse_Click" HorizontalAlignment="Left" Margin="250,381,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnSlowMotion" Content="Slow Motion" Click="BtnSlowMotion_Click" HorizontalAlignment="Center" Margin="0,381,0,0" VerticalAlignment="Top"/>
-        <Button Content="Return" Click="BtnReturn_Click" HorizontalAlignment="Left" Margin="481,381,0,0" VerticalAlignment="Top" Width="71"/>
-        <Slider Name="VideoSlider" Minimum="0" Maximum="100" ValueChanged="VideoSlider_ValueChanged" HorizontalAlignment="Left" Margin="71,358,0,0" VerticalAlignment="Top" Width="300"/>
+        Title="VideoEffectWindow" Height="634" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="10,10,10,10" Background="#F4F4F4">
+        <!-- Video Player -->
+        <MediaElement Name="mediaPlayer" LoadedBehavior="Manual" UnloadedBehavior="Manual"
+        Margin="10,10,6,272"/>
 
+        <!-- Buttons -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom"
+            Orientation="Vertical" Margin="0,20">
+
+            <!-- Hàng 1 -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnPlay" Content="Play" Click="BtnPlay_Click"
+            Width="120" Margin="10" Background="#4CAF50" Foreground="White" BorderBrush="#388E3C" BorderThickness="1"/>
+                <Button Name="btnPause" Content="Pause" Click="BtnPause_Click"
+            Width="120" Margin="10" Background="#FFEB3B" Foreground="White" BorderBrush="#FBC02D" BorderThickness="1"/>
+                <Button Name="btnCut" Content="Cắt Video" Click="BtnCut_Click"
+            Width="120" Margin="10" Background="#FF9800" Foreground="White" BorderBrush="#F57C00" BorderThickness="1"/>
+                <Button Name="btnGray" Content="Trắng Đen" Click="BtnGray_Click"
+            Width="120" Margin="10" Background="#9E9E9E" Foreground="White" BorderBrush="#757575" BorderThickness="1"/>
+            </StackPanel>
+
+            <!-- Hàng 2 -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnReverse" Content="Tua Ngược" Click="BtnReverse_Click"
+            Width="120" Margin="10" Background="#3F51B5" Foreground="White" BorderBrush="#303F9F" BorderThickness="1"/>
+                <Button Name="btnSlowMotion" Content="Slow Motion" Click="BtnSlowMotion_Click"
+            Width="120" Margin="10" Background="#9C27B0" Foreground="White" BorderBrush="#7B1FA2" BorderThickness="1"/>
+                <Button Name="btnRestart" Content="Restart" Click="BtnRestart_Click"
+            Width="120" Margin="10" Background="#03A9F4" Foreground="White" BorderBrush="#0288D1" BorderThickness="1"/>
+                <Button Name="btnReturn" Content="Save Video" Click="BtnReturn_Click"
+            Width="120" Margin="10" Background="#4CAF50" Foreground="White" BorderBrush="#388E3C" BorderThickness="1"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Time Range Sliders -->
+        <StackPanel VerticalAlignment="Top" Margin="50,340,31,0">
+            <TextBlock Text="Thời gian bắt đầu" HorizontalAlignment="Left"
+               FontWeight="Bold" Margin="10,10,0,5" FontSize="14" Foreground="#333333"/>
+            <StackPanel Orientation="Horizontal" Height="49" Width="741">
+                <Slider x:Name="StartTimeSlider" Minimum="0" Maximum="100" ValueChanged="StartTimeSlider_ValueChanged" Height="10" Width="673" Background="#80E27E" Foreground="White"/>
+                <TextBlock x:Name="StartTimeText" Text="00:00" FontSize="14" FontWeight="Bold" Margin="10" Foreground="#333333"/>
+            </StackPanel>
+
+            <TextBlock Text="Thời gian kết thúc" HorizontalAlignment="Left"
+               FontWeight="Bold" Margin="10,10,0,5" FontSize="14" Foreground="#333333"/>
+            <StackPanel Orientation="Horizontal" Width="757">
+                <Slider Name="EndTimeSlider" Minimum="0" Maximum="100" Value="20" Width="671" Margin="10" Height="10"
+                ValueChanged="EndTimeSlider_ValueChanged" Background="#80E27E"/>
+                <TextBlock Name="EndTimeText" Text="00:00" FontSize="14" FontWeight="Bold" Margin="10" Foreground="#333333"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

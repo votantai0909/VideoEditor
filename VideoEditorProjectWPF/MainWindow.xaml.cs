@@ -15,6 +15,8 @@ using System.Windows.Threading;
 using VideoEditorProject.Services.Services;
 using System.Threading.Tasks;
 using VideoEditorProject.Repositories.Entity;
+using System.Diagnostics;
+using Path = System.IO.Path;
 
 namespace VideoEditorProjectWPF
 {
@@ -29,6 +31,7 @@ namespace VideoEditorProjectWPF
         private DispatcherTimer timer;
         private Point _dragStartPoint;
         private DateTime _lastClickTime;
+        private TextBlock? watermarkText;
 
         public MainWindow()
         {
@@ -230,7 +233,7 @@ namespace VideoEditorProjectWPF
             }
         }
 
-        private void AddTextToVideo_Click(object sender, RoutedEventArgs e)
+        private async void AddTextToVideo_Click(object sender, RoutedEventArgs e)
         {
             string text = TextToAdd.Text;
             if (string.IsNullOrWhiteSpace(text))
@@ -348,8 +351,6 @@ namespace VideoEditorProjectWPF
         {
             if (VideoPlayer.Source != null)
             {
-
-
                 string videoPath = VideoPlayer.Source.LocalPath;
 
                 if (File.Exists(videoPath)) // 🔹 Kiểm tra file trước khi mở hiệu ứng
@@ -384,5 +385,36 @@ namespace VideoEditorProjectWPF
                 MessageBox.Show("Vui lòng chọn video trước!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
+        private async Task RunFFmpegCommand(string arguments)
+        {
+            string ffmpegPath = @"D:\dowload\SE_KI_7\PRN212\FF\ffmpeg-master-latest-win64-gpl-shared\bin\ffmpeg.exe";
+
+            if (!File.Exists(ffmpegPath))
+            {
+                MessageBox.Show("Không tìm thấy FFmpeg. Vui lòng kiểm tra lại đường dẫn!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = ffmpegPath,
+                Arguments = arguments,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false, // Quan trọng: Không dùng Shell
+                CreateNoWindow = true
+            };
+
+            using (Process process = new Process { StartInfo = psi })
+            {
+                process.Start();
+                string output = await process.StandardError.ReadToEndAsync(); // Đọc lỗi nếu có
+                await process.WaitForExitAsync();
+
+                MessageBox.Show(output, "FFmpeg Output", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
     }
 }
+    
